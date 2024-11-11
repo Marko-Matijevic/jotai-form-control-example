@@ -1,0 +1,21 @@
+{
+  "name": "reproduction-jotai-form-control",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build"
+  },
+  "dependencies": {
+    "jotai": "^2.10.1",
+    "jotai-form": "^0.1.6",
+    "react": "^18.3.1",
+    "vue": "^3.0.4"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "@vue/compiler-sfc": "^3.0.4",
+    "react-dom": "^18.3.1",
+    "vite": "^5.4.11",
+    "zod": "^3.23.8"
+  }
+}
