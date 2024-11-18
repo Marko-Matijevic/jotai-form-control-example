@@ -22,7 +22,7 @@ export const FormOne = () => {
 		setTouched,
 	} = useAtomValue(formAtom);
 
-	const getHelperMessageFromFieldErrors = (fieldError, touched) => {
+	const getErrorMessageFromFieldErrors = (fieldError, touched) => {
 		if (touched === false) {
 			return undefined;
 		}
@@ -66,7 +66,7 @@ export const FormOne = () => {
 							}
 						/>
 						<small>
-							{getHelperMessageFromFieldErrors(
+							{getErrorMessageFromFieldErrors(
 								fieldErrors?.name?.message,
 								touched.name
 							)}
@@ -85,9 +85,8 @@ export const FormOne = () => {
 							}
 						/>
 						<small>
-							{getHelperMessageFromFieldErrors(
+							{getErrorMessageFromFieldErrors(
 								fieldErrors?.age?.message,
-
 								touched.age
 							)}
 						</small>
